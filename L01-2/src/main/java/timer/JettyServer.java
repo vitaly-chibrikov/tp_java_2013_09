@@ -3,6 +3,7 @@ package timer;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 import templater.PageGenerator;
+import templater.Test;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -33,8 +34,8 @@ public class JettyServer extends AbstractHandler {
         Map<String, Object> pageVariables = new HashMap<>();
         pageVariables.put("refreshPeriod", "1000");
         pageVariables.put("serverTime", getTime());
+        pageVariables.put("test", new Test());
         response.getWriter().println(PageGenerator.getPage("timer.tml", pageVariables));
-
     }
 
 }

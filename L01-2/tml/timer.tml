@@ -21,5 +21,6 @@
 <body onload='setInterval(function(){refresh()}, ${refreshPeriod} ); setClientTime();'>
 <p>Client time: <span id='ClientTime'></span></p>
 <p>Server time: ${serverTime}</p>
+<p>Object test: ${test.getId()}</p>
 </body>
 </html>

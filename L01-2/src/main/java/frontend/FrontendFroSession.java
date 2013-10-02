@@ -34,7 +34,7 @@ public class FrontendFroSession extends HttpServlet {
         Map<String, Object> pageVariables = new HashMap<>();
 
         if (request.getPathInfo().equals("/authform")) {
-            pageVariables.put("lastLogin", login);
+            pageVariables.put("lastLogin", login == null ? "" : login);
             response.getWriter().println(PageGenerator.getPage("authform.tml", pageVariables));
             return;
         }
@@ -67,7 +67,7 @@ public class FrontendFroSession extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
         Map<String, Object> pageVariables = new HashMap<>();
-        pageVariables.put("lastLogin", login);
+        pageVariables.put("lastLogin", login == null ? "" : login);
         response.getWriter().println(PageGenerator.getPage("authform.tml", pageVariables));
     }
 }
