@@ -13,11 +13,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class Frontend extends HttpServlet implements Abonent, Runnable {
+    public static final String usePageURL = "/userid";
     private MessageSystem ms;
     private Address address;
-    private Map<String, UserSession> sessionIdToUserSession = new HashMap<>();
+    private Map<String, UserSession> sessionIdToUserSession = new ConcurrentHashMap<>();
 
     public Frontend(MessageSystem ms) {
         this.ms = ms;
@@ -47,22 +49,21 @@ public class Frontend extends HttpServlet implements Abonent, Runnable {
 
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response) throws ServletException, IOException {
-        if (request.getPathInfo().equals("/userid")) {
-            response.setContentType("text/html;charset=utf-8");
-            response.setStatus(HttpServletResponse.SC_OK);
+        response.setContentType("text/html;charset=utf-8");
+        response.setStatus(HttpServletResponse.SC_OK);
 
-            HttpSession session = request.getSession();
-            UserSession userSession = sessionIdToUserSession.get(session.getId());
-            if (userSession == null) {
-                responseUserPage(response, "Auth error");
-                return;
-            }
-            if (userSession.getUserId() == null) {
-                responseUserPage(response, "wait for authorization");
-                return;
-            }
-            responseUserPage(response, "name = " + userSession.getName() + ", id = " + userSession.getUserId());
+        HttpSession session = request.getSession();
+        UserSession userSession = sessionIdToUserSession.get(session.getId());
+        if (userSession == null) {
+            responseUserPage(response, "Auth error");
+            return;
         }
+        if (userSession.getUserId() == null) {
+            responseUserPage(response, "wait for authorization");
+            return;
+        }
+        responseUserPage(response, "name = " + userSession.getName() + ", id = " + userSession.getUserId());
+
     }
 
     private void responseUserPage(HttpServletResponse response, String userState) throws IOException {
@@ -75,22 +76,20 @@ public class Frontend extends HttpServlet implements Abonent, Runnable {
 
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response) throws ServletException, IOException {
-        if (request.getPathInfo().equals("/userid")) {
-            String login = request.getParameter("login");
-            String sessionId = request.getSession().getId();
-            UserSession userSession = new UserSession(sessionId, login, ms.getAddressService());
-            sessionIdToUserSession.put(sessionId, userSession);
+        String login = request.getParameter("login");
+        String sessionId = request.getSession().getId();
+        UserSession userSession = new UserSession(sessionId, login, ms.getAddressService());
+        sessionIdToUserSession.put(sessionId, userSession);
 
-            Address frontendAddress = getAddress();
-            Address accountServiceAddress =userSession.getAccountService();
+        Address frontendAddress = getAddress();
+        Address accountServiceAddress = userSession.getAccountService();
 
-            ms.sendMessage(new MsgGetUserId(frontendAddress, accountServiceAddress, login, sessionId));
+        ms.sendMessage(new MsgGetUserId(frontendAddress, accountServiceAddress, login, sessionId));
 
-            response.setContentType("text/html;charset=utf-8");
-            response.setStatus(HttpServletResponse.SC_OK);
+        response.setContentType("text/html;charset=utf-8");
+        response.setStatus(HttpServletResponse.SC_OK);
 
-            responseUserPage(response, "authorization started");
-        }
+        responseUserPage(response, "authorization started");
     }
 
     public void run() {
