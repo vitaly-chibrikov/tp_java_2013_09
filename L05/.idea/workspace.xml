@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="48b8beee-d3e0-4e63-8701-d1e880aa0a89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/admin/AdminPageServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_1_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_1_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_1_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_1_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_1_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_1_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_1_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_1_0_M0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_20.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tml/admin.tml" />
       <change type="DELETED" beforePath="D:\home\tully\java\2013.09\examples\L02-1\out\production\L02-1\main\Main.class" afterPath="" />
       <change type="DELETED" beforePath="D:\home\tully\java\2013.09\examples\L02-1\out\production\L02-1\main\RandomRunExample.class" afterPath="" />
       <change type="DELETED" beforePath="D:\home\tully\java\2013.09\examples\L02-1\out\production\L02-1\main\SeriesRunExample.class" afterPath="" />
       <change type="DELETED" beforePath="D:\home\tully\java\2013.09\examples\L02-1\out\production\L02-1\main\ThreadInterference.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../L03-1/src/main/java/example/Frontend.java" afterPath="$PROJECT_DIR$/../L03-1/src/main/java/example/Frontend.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../L03-1/L03-1.iml" afterPath="$PROJECT_DIR$/../L03-1/L03-1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../L03-1/.idea/misc.xml" afterPath="$PROJECT_DIR$/../L03-1/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../L02-1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../L02-1/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../L03-1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../L03-1/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="L05.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,6 +16,7 @@
     <file path="/Main.java" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383154949749" ignored="false" />
     <file path="/admin.tml" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383155718845" ignored="false" />
     <file path="/Frontend.java" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383154910842" ignored="false" />
+    <file path="/pom.xml" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383241817389" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
+            <state line="7" column="58" selection-start="361" selection-end="361" vertical-scroll-proportion="0.20987654">
               <folding />
             </state>
           </provider>
@@ -109,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminPageServlet.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AdminPageServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/admin/AdminPageServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="79" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.42262894">
+            <state line="28" column="79" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,13 +160,23 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/example/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/example/Frontend.java" />
         <option value="$PROJECT_DIR$/tml/admin.tml" />
         <option value="$PROJECT_DIR$/src/main/java/admin/AdminPageServlet.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -544,7 +540,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -558,7 +554,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298887" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960254" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -641,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-servlet/9.1.0.M0/jetty-servlet-9.1.0.M0-sources.jar!/org/eclipse/jetty/servlet/ServletHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="707" column="0" selection-start="21220" selection-end="21220" vertical-scroll-proportion="0.0">
@@ -697,10 +686,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/admin/AdminPageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="79" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.42262894">
+        <state line="28" column="79" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="58" selection-start="361" selection-end="361" vertical-scroll-proportion="0.20987654">
+          <folding />
         </state>
       </provider>
     </entry>
