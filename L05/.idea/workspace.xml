@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="48b8beee-d3e0-4e63-8701-d1e880aa0a89" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\home\tully\java\2013.09\examples\L02-1\out\production\L02-1\main\Main.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\home\tully\java\2013.09\examples\L02-1\out\production\L02-1\main\RandomRunExample.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\home\tully\java\2013.09\examples\L02-1\out\production\L02-1\main\SeriesRunExample.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\home\tully\java\2013.09\examples\L02-1\out\production\L02-1\main\ThreadInterference.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/example/Main.java" afterPath="$PROJECT_DIR$/src/main/java/example/Main.java" />
     </list>
     <ignored path="L05.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383153763664" ignored="false" />
     <file path="/AdminPageServlet.java" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383155777126" ignored="false" />
-    <file path="/Main.java" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383154949749" ignored="false" />
+    <file path="/Main.java" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383242461152" ignored="false" />
     <file path="/admin.tml" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383155718845" ignored="false" />
     <file path="/Frontend.java" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383154910842" ignored="false" />
     <file path="/pom.xml" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383241817389" ignored="false" />
+    <file path="/fragment.java" changelist="48b8beee-d3e0-4e63-8701-d1e880aa0a89" time="1383242434419" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,20 +73,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="58" selection-start="361" selection-end="361" vertical-scroll-proportion="0.20987654">
+            <state line="7" column="58" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/example/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="79" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="21" column="49" selection-start="777" selection-end="777" vertical-scroll-proportion="0.46256238">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,11 +158,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/example/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/example/Frontend.java" />
         <option value="$PROJECT_DIR$/tml/admin.tml" />
         <option value="$PROJECT_DIR$/src/main/java/admin/AdminPageServlet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/example/Main.java" />
       </list>
     </option>
   </component>
@@ -381,6 +379,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -390,11 +389,11 @@
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="example.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="8080" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -554,7 +553,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298887" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298887" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960254" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -649,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/example/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="79" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/example/Frontend.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="0" selection-start="2801" selection-end="2801" vertical-scroll-proportion="0.0">
@@ -695,8 +687,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="58" selection-start="361" selection-end="361" vertical-scroll-proportion="0.20987654">
+        <state line="7" column="58" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/example/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="49" selection-start="777" selection-end="777" vertical-scroll-proportion="0.46256238">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

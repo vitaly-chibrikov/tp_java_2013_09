@@ -10,6 +10,15 @@ import org.eclipse.jetty.servlet.ServletHolder;
 
 public class Main {
     public static void main(String[] args) throws Exception {
+        if (args.length != 1) {
+            System.out.append("Use port as the first argument");
+            System.exit(1);
+        }
+
+        String portString = args[0];
+        int port = Integer.valueOf(portString);
+        System.out.append("Starting at port: ").append(portString).append('\n');
+
         MessageSystem ms = new MessageSystem();
 
         Frontend frontend = new Frontend(ms);
@@ -18,7 +27,7 @@ public class Main {
         (new Thread(frontend)).start();
         (new Thread(accountService)).start();
 
-        Server server = new Server(8080);
+        Server server = new Server(port);
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.addServlet(new ServletHolder(new AdminPageServlet()), AdminPageServlet.adminPageURL);
         context.addServlet(new ServletHolder(frontend), Frontend.usePageURL);
