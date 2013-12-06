@@ -1,4 +1,4 @@
-package sax;
+package main.java.sax;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -10,8 +10,8 @@ public class ReadXMLFileSAX {
 			SAXParserFactory factory = SAXParserFactory.newInstance();
 			SAXParser saxParser = factory.newSAXParser();
 		 
-			//SaxHandler handler = new SaxHandler();	
-			SaxEmptyHandler handler = new SaxEmptyHandler();	
+			//SaxHandler handler = new SaxHandler();
+			SaxEmptyHandler handler = new SaxEmptyHandler();
 	        saxParser.parse(xmlFile, handler);
 	        
 	        return handler.getObject();

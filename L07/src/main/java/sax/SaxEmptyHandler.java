@@ -1,4 +1,4 @@
-package sax;
+package main.java.sax;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

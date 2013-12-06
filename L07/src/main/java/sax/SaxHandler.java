@@ -1,10 +1,9 @@
-package sax;
+package main.java.sax;
 
+import main.java.reflection.ReflectionHelper;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-
-import reflection.ReflectionHelper;
 
 public class SaxHandler extends DefaultHandler {
 	private static String CLASSNAME = "class"; 	

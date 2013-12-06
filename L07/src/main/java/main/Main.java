@@ -1,4 +1,7 @@
-package main;
+package main.java.main;
+
+import main.java.reflection.ReflectionHelper;
+import main.java.sax.ReadXMLFileSAX;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -6,17 +9,14 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import reflection.ReflectionHelper;
-import sax.ReadXMLFileSAX;
-
 public class Main {
 	
 	public static void main(String[] args){
-		writeToBinFile();
+		//writeToBinFile();
 		//readFromBinFile();
 		//workWithReflection();
 		//workWithFactory();
-		//workWithSAX();
+		workWithSAX();
 	}
 
 	private static void workWithSAX() {
@@ -31,7 +31,7 @@ public class Main {
 	}
 
 	private static void workWithReflection() {
-		SerializationObject object = (SerializationObject)ReflectionHelper.createIntance("main.main.SerializationObject");
+		SerializationObject object = (SerializationObject) ReflectionHelper.createIntance("main.java.main.SerializationObject");
 		System.out.append(object.toString() + '\n');
 		
 		ReflectionHelper.setFieldValue(object, "name", "Kaylee");
@@ -57,7 +57,7 @@ public class Main {
 	private static void writeToBinFile() {
 		System.out.append("Write to bin file\n");
 		try{
-			 SerializationObject object = new SerializationObject("Zoe", 31);
+			 SerializationObject object = new SerializationObject("Zoe2", 31);
 	         FileOutputStream fileOut = new FileOutputStream("test.bin");
 	         ObjectOutputStream out = new ObjectOutputStream(fileOut);
 	         out.writeObject(object);
